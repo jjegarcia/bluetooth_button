@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "519973869886",
+    "firebase_url": "https://invehiclealertapi-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "invehiclealertapi",
+    "storage_bucket": "invehiclealertapi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519973869886:android:b78e7e077127ac348bf46f",
+        "android_client_info": {
+          "package_name": "com.example.bluetooth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519973869886-lelhh72fpj311blov77l2q84dut6t6vj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bluetooth",
+            "certificate_hash": "22aea05091d99b6177d4a26791181d48974bf6c1"
+          }
+        },
+        {
+          "client_id": "519973869886-q6000mmpl4e02tc6dp692ioi35jl3nn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD8hP0LzTTyu-tRayZwTEflFoUNjUZiJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519973869886-q6000mmpl4e02tc6dp692ioi35jl3nn1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

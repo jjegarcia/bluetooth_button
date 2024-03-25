@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">bluetooth</string>
+    <string name="service_name">foreground_notification</string>
+</resources>
