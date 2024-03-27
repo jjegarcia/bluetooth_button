@@ -161,8 +161,16 @@ class GattComponent constructor(
                             }
                         )
                     }
+                    is PushType -> {
+                        bluetoothComponent.notificationHelper?.createAlertNotification()
+                    }
+                    else -> {
+                        loggerWrapper.log(
+                            "Invalid:",
+                            "Characteristic $uuid changed | value: $value"
+                        )
 
-                    else -> {}
+                    }
                 }
                 writeCharacteristic(characteristic, value, gatt)
             }
@@ -171,9 +179,10 @@ class GattComponent constructor(
 
     private fun getRequestType(value: ByteArray?): RequestType {
         if (value != null) {
-            return when (value[2]) {
+            return when (value[4]) {
                 ALARM.header -> AlarmType
                 BUZZ.header -> BuzzType
+                PUSH.header -> PushType
                 else -> Undetermined
             }
         }
