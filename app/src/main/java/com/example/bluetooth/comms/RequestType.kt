@@ -1,9 +1,9 @@
 package com.example.bluetooth.comms
 //                                    [     0    header    Length[2]       X     X      ]
-const val  RESET_ASCII: Byte = 0x4F
-const val  ALARM_ASCII: Byte = 0x41
-const val  BUZZ_ASCII: Byte = 0x42
-const val  PUSH_ASCII: Byte = 0x50
+const val  RESET_ASCII: Byte = 0x4F //O 79d
+const val  ALARM_ASCII: Byte = 0x41 //A 65d
+const val  BUZZ_ASCII: Byte =0x42  //B 66d
+const val  PUSH_ASCII: Byte =0x50  //P 80d
 
 
 enum class PACKET(val header: Byte, val command: ByteArray) {

@@ -15,7 +15,10 @@ import com.example.bluetooth.BluetoothComponent
 import com.example.bluetooth.messaging.ToastWrapper
 import java.util.*
 
-private const val DEVICE_ADDRESS = "04:91:62:97:83:78"
+//private const val DEVICE_ADDRESS = "04:91:62:97:83:78" //proto-board
+//private const val DEVICE_ADDRESS = "40:84:32:66:F8:6B" //new board
+private const val DEVICE_ADDRESS = "04:91:62:9B:4B:C6" // intact board
+
 
 class ScanComponent constructor(
     private val context: Context,

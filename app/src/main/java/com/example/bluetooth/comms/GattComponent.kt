@@ -179,7 +179,8 @@ class GattComponent constructor(
 
     private fun getRequestType(value: ByteArray?): RequestType {
         if (value != null) {
-            return when (value[4]) {
+            val headerType=value[2]
+            return when (headerType) {
                 ALARM.header -> AlarmType
                 BUZZ.header -> BuzzType
                 PUSH.header -> PushType
